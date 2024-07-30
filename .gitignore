@@ -1,0 +1,29 @@
+# Node modules
+node_modules/
+
+# Environment files
+.env
+
+# Logs
+*.log
+
+# Build output
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.swp
+
+# Uploads
+uploads/
+
+# Swagger output
+swagger-output.json
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# VSCode settings
+.vscode/
