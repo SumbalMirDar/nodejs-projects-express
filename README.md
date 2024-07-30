@@ -13,6 +13,4 @@ docker start mongodb
 <!-- create swagger -->
 npm run swagger
 
-<!-- run application -->
-npm start
 
