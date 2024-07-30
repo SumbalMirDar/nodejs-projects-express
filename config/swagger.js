@@ -16,7 +16,7 @@ const doc = {
 const outputFile = path.join(__dirname, '../swagger-output.json');
 
 // Dynamically include all route files
-const routesDir = path.join(__dirname, '../routes/router.js');
+const routesDir = path.join(__dirname, '../routes/users.route.js');
 // const endpointsFiles = fs.readFileSync('./routes/router.js') 
 // fs.readdirSync(routesDir).map(file => path.join(routesDir, file));
 
