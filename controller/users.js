@@ -76,9 +76,26 @@ const addProduct  = async(req, res)=>{
         console.log("eror", e)
     }
 }
-
+const uploadFile = async (req, res) => {
+    try {
+      if (!req.files || req.files.length === 0) {
+        return res.status(400).send('No files uploaded');
+      }
+      res.json({
+        message: 'Files uploaded successfully',
+        files: req.files
+      });
+    } catch (error) {
+      res.status(400).send({
+        message: 'Error uploading file',
+        error: error.message
+      });
+    }
+  };
+  
 module.exports = {
     registerUSer,
     login,
-    addProduct
+    addProduct,
+    uploadFile
 }
